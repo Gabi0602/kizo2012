@@ -20,11 +20,11 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Vector3 direction = player.position - this.transform.position;
-        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        //rb.rotation = angle;
-        //direction.Normalize();
-        //movement = direction;
+        Vector3 direction = player.position - this.transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        rb.rotation = angle;
+        direction.Normalize();
+        movement = direction;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Move(movement);
+        Move(movement);
 
         if (waypointIndex <= waypoints.Length - 1)
         {
