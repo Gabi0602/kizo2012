@@ -41,10 +41,14 @@
      <Compile Include="Assets\Scripts\loadLevel.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\buttonM.cs" />
      <Compile Include="Assets\Scripts\End.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\RandomSprite.cs" />
+     <Compile Include="Assets\Scripts\BodyPart.cs" />
+     <Compile Include="Assets\Scripts\Explode.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
