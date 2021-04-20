@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - Deadly
+  - Box
   layers:
   - Default
   - TransparentFX

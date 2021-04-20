@@ -7,7 +7,7 @@ public class RandomSprite : MonoBehaviour
     public Sprite[] sprites;
     public string resourceName;
     public int currentSprite = -1;
-
+    Artefacts art;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +24,8 @@ public class RandomSprite : MonoBehaviour
                 currentSprite = sprites.Length -1;
             }
             GetComponent<SpriteRenderer>().sprite = sprites[currentSprite];
+            art = GetComponent<Artefacts>();
+            art.currentArtefact = art.artefact[currentSprite];
         }
     }
 

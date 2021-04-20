@@ -7,7 +7,7 @@ public class loadLevel : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag=="Player")
+        if(other.gameObject.tag=="Box")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
